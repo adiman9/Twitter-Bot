@@ -33,6 +33,10 @@ print "-----------------------------------"
 print "Waiting...."
 schedule.every(30).minutes.do(job)
 
+"""
+Soz, I want a free T-shirt for hacktoberfest
+"""
+
 while True:
     schedule.run_pending()
     time.sleep(1)
