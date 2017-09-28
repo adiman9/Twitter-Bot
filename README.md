@@ -1,5 +1,5 @@
 # Twitter-Bot
-An automated Twitter Bot.
+An automated Twitter Bot!
 
 ## How To Run
 
