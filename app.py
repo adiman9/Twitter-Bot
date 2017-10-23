@@ -3,7 +3,7 @@ import random
 import schedule
 import time
 
-def job():
+def post_random_tweet():
     with open('tweets.txt') as file:
         TWEETS = file.readlines()
     CONSUMER_KEY = 'XXXXXXXXXXXXXXXX'
@@ -31,7 +31,7 @@ print "-----------------------------------"
 print "            TWEET BOT"
 print "-----------------------------------"
 print "Waiting...."
-schedule.every(30).minutes.do(job)
+schedule.every(30).minutes.do(post_random_tweet)
 
 """
 Soz, I want a free T-shirt for hacktoberfest

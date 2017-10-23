@@ -4,7 +4,7 @@ import random
 import schedule
 import time
 
-def job():
+def unfollow_users():
     CONSUMER_KEY = 'XXXXXXXXXXXXXXXX'
     CONSUMER_SECRET = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     ACCESS_TOKEN_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
@@ -33,7 +33,7 @@ def job():
             status = r.json()
             print 'unfollowed %s' % status['screen_name']
 
-schedule.every(1).minutes.do(job)
+schedule.every(1).minutes.do(unfollow_users)
 
 while True:
     schedule.run_pending()
